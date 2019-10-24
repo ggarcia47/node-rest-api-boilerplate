@@ -1,49 +1,41 @@
-# Users
+# node-rest-api-boilerplate
 
-Fnode-rest-api-boilerplate is a JS api that returns an alphabetic list of actives users
+👋 Hi, welcome to the test assessment.
 
-## Installation
+Please take care of the requirements described below.
+You have only 4 hours to complete the entire test. To save time to develop all the things, we're providing a simple boilerplate with all the basics to start to develop immediately. Don't forget to document all, we evaluate functionality, coding style, and presentation.
 
-You will need to install Nodejs first, clone the repo and then run npm start 
+## First Steps
+- Complete with your personal information the `package.json`.
+- Read carefully the requirements
+- Start to develop
 
-```bash
-npm start
-```
+## Requirements
+Functionality: Get a list of active users
 
-## Usage
-This Api will create an endpoint that you will need to consume 
- 
-```bash
-http://localhost:3000/api/user
-```
-## Usage
-This Api returns and object "Users" that contains an array of users
-
-```python
-"Users": {
-        "users": [
-            {
-                "id": 6765854345,
-                "name": "Elena Medina",
-                "lastname": "Castillo",
-                "birthday": "1983-05-17",
-                "is_active": true,
-                "email": "ecastillo@email.com",
-                "genre": "Femenino",
-                "Age": 36
-            }..
+Scenario: any member, with available services
 
 ```
-
-## Settings
-You can config the  in witch the API will run using the var PORT : number with default type on 3000
-On file:
-```bash
-./config/index.js
+Given users exist in an external service
+When executing a GET petition to the /users endpoint
+Then I obtain all the active users ordered by last name
+And each user has a field with his calculated age
 ```
 
+Services to consume
+- API Endpoint - https://2eja2nqth0.execute-api.us-east-1.amazonaws.com/api/users
+- Swagger - https://app.swaggerhub.com/apis/jbrizio/ms-users-api/1.0.0
 
-Please make sure to update tests as appropriate.
+# Deliverables
+- Repository on Github
+- Swagger
+- Test cases
 
-## Build
-This code uses express 4.17.1, morgan 1.9.1, node-fetch 2.6.0, nodemon 1.19.4, chai 4.2.0, eslint 6.5.1, mocha 6.2.2"
+## Stack used
+- Node.js
+- Express
+
+## Advice
+Please document all the things that you consider necessary. Follow the good practices followed in the course.
+
+Good luck! 💪
